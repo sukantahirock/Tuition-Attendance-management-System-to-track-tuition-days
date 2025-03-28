@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tuition Management</h1>
+
+        <!-- Student List -->
+        <div id="student-list">
+            <h2>Student List</h2>
+            <input type="text" id="student-name" placeholder="Enter student name">
+            <button onclick="addStudent()">Add Student</button>
+            <ul id="students"></ul>
+        </div>
+
+        <!-- Attendance Tracker -->
+        <div id="attendance">
+            <h2>Attendance Tracker</h2>
+            <div id="attendance-details">
+                <p>Select a student to mark attendance.</p>
+            </div>
+            <h3>Total Attendance: <span id="total-attendance">0</span></h3>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
